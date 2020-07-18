@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
-        android:elevation="4dp"
+        android:elevation="@dimen/activity_article_list_appbarlayout_elevation"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
 
         <com.google.android.material.appbar.CollapsingToolbarLayout
@@ -21,7 +21,7 @@
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
-                android:layout_height="58dp"
+                android:layout_height="@dimen/activity_article_list_toolbar_layout_height"
                 android:background="@color/theme_primary">
 
                 <ImageView
@@ -41,9 +41,9 @@
         android:id="@+id/swipe_refresh_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginRight="16dp"
+        android:layout_marginLeft="@dimen/activity_article_list_swiperefresh_default_margin"
+        android:layout_marginTop="@dimen/activity_article_list_swiperefresh_default_margin"
+        android:layout_marginRight="@dimen/activity_article_list_swiperefresh_default_margin"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <androidx.recyclerview.widget.RecyclerView
@@ -54,7 +54,7 @@
             android:clipToPadding="false"
             android:paddingLeft="@dimen/list_side_margin"
             android:paddingRight="@dimen/list_side_margin"
-            android:paddingBottom="28dp"
+            android:paddingBottom="@dimen/activity_article_list_recyclerview_paddingBottom"
             android:scrollbarStyle="outsideOverlay" />
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 

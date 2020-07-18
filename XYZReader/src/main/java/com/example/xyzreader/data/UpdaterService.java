@@ -72,7 +72,6 @@ public class UpdaterService extends IntentService {
                 values.put(ItemsContract.Items.ASPECT_RATIO, object.getString("aspect_ratio" ));
                 time.parse3339(object.getString("published_date"));
                 values.put(ItemsContract.Items.PUBLISHED_DATE, time.toMillis(false));
-//                values.put(ItemsContract.Items.PUBLISHED_DATE, object.getString("published_date"));
                 cpo.add(ContentProviderOperation.newInsert(dirUri).withValues(values).build());
             }
 
