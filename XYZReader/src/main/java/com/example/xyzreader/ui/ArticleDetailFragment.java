@@ -225,6 +225,7 @@ public class ArticleDetailFragment extends Fragment implements
         TextView bylineView = (TextView) mRootView.findViewById(R.id.article_byline);
         bylineView.setMovementMethod(new LinkMovementMethod());
         TextView bodyView = (TextView) mRootView.findViewById(R.id.article_body);
+//        collapsingToolbarLayout = mRootView.findViewById(R.id.fragment_article_detail_collapsing_layout);
 
 
         bodyView.setTypeface(Typeface.createFromAsset(getResources().getAssets(), "Rosario-Regular.ttf"));
@@ -254,7 +255,7 @@ public class ArticleDetailFragment extends Fragment implements
 
             }
             mToolbar.setTitle(titleView.getText());
-            collapsingToolbarLayout.setExpandedTitleColor(getResources().getColor(android.R.color.transparent));
+//            collapsingToolbarLayout.setExpandedTitleColor(getResources().getColor(android.R.color.transparent));
             bodyView.setText(Html.fromHtml(mCursor.getString(ArticleLoader.Query.BODY).replaceAll("(\r\n|\n)", "<br />")));
             ImageLoaderHelper.getInstance(getActivity()).getImageLoader()
                     .get(mCursor.getString(ArticleLoader.Query.PHOTO_URL), new ImageLoader.ImageListener() {
