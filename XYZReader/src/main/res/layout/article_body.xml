@@ -55,7 +55,6 @@
             android:layout_height="wrap_content"
             android:textColor="#8fff" />
     </LinearLayout>
-
     <TextView
         android:id="@+id/article_body"
         style="?android:attr/textAppearanceMedium"

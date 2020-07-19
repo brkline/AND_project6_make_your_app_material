@@ -12,5 +12,6 @@
     <dimen name="activity_article_list_toolbar_layout_height">58dp</dimen>
     <dimen name="activity_article_list_swiperefresh_default_margin">16dp</dimen>
     <dimen name="activity_article_list_recyclerview_paddingBottom">28dp</dimen>
+    <dimen name="fragment_article_detail_appbar_elevation">4dp</dimen>
 
 </resources>
